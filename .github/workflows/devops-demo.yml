@@ -1,0 +1,14 @@
+name: Devops demo
+
+on:
+    push:
+        branches: [ main ]
+
+
+jobs:
+    example:
+        runs-on: windows-latest
+        steps:
+            - name: First step
+              run: ls -a
+            
